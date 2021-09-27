@@ -6,7 +6,7 @@ import ScannerScreen from './Screen/ScannerScreen';
 
 const Stack = createStackNavigator();
 const screenOptions = {
-  headerShown: false,
+  headerShown: true,
 };
 
 export default function App() {
