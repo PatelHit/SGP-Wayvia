@@ -43,7 +43,7 @@ const ScannerScreen = () => {
         </TouchableOpacity>
       }
     />
-  );        
+  );
 };
 
 const styles = StyleSheet.create({
