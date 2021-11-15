@@ -13,41 +13,26 @@ const HomePage = props => {
         />
       </View>
       <View style={styles.mainMenu}>
-        <TouchableOpacity
-          onPress={() => props.navigation.navigate('SouthIndian')}>
-          <View style={styles.individualMenuButtons}>
-            <Text style={styles.individualMenuText}>South Indian</Text>
-            <View>
-              <Image
-                source={require('../assets/images/southIndian.png')}
-                style={{
-                  height: 90,
-                  width: 100,
-                  // margin: 5,
-                  // marginLeft: 200,
-                }}
-                resizeMode={'stretch'}
-              />
-            </View>
+        data=
+        {[
+          {key: 'Plane Dosa'},
+          {key: 'Idli'},
+          {key: 'Uttapam'},
+          {key: 'Mendu Wada'},
+          {key: 'Masala Dosa'},
+          {key: 'Pongal'},
+          {key: 'Rasam'},
+          {key: 'Murukku'},
+          {key: 'Coconut Rice'},
+          {key: 'Coconut Chatni'},
+        ]}
+        renderItem=
+        {({item}) => (
+          <View style={styles.individualItems}>
+            <Text style={styles.itemName}>{item.key}</Text>
           </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => props.navigation.navigate('MainCourse')}>
-          <View style={styles.individualMenuButtons}>
-            <Text style={styles.individualMenuText}>Main Course</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => props.navigation.navigate('IceCream')}>
-          <View style={styles.individualMenuButtons}>
-            <Text style={styles.individualMenuText}>Ice Creams</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => props.navigation.navigate('ColdDrinks')}>
-          <View style={styles.individualMenuButtons}>
-            <Text style={styles.individualMenuText}>Cold Drinks</Text>
-          </View>
-        </TouchableOpacity>
+        )}
+        {/* /> */}
       </View>
       <View style={{margin: 5, flex: 1}}>
         <Image
