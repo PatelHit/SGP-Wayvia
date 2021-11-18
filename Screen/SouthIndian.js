@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, FlatList} from 'react-native';
-import styles from '../Theme/Styles/SouthIndian.-style';
+import styles from '../Theme/Styles/MenuPage-style';
 const SouthIndian = props => {
   return (
     <>

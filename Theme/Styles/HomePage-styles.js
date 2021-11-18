@@ -4,7 +4,11 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   mainPhoto: {
     padding: 100,
-    margin: 10,
+    marginRight: 5,
+    //margin: 5,
+    marginBottom: 10,
+    marginTop: 5,
+
     width: 392,
     height: 200,
     borderRadius: 7,
@@ -16,11 +20,15 @@ const styles = StyleSheet.create({
   },
   individualMenuButtons: {
     marginBottom: 10,
+    // marginLeft: 0.5,
+    marginLeft: 8,
+    // // marginRight: 8,
+
     borderColor: 'black',
     // borderWidth: 1,
     borderRadius: 7,
     height: 100,
-    width: 392,
+    width: 377,
     backgroundColor: 'orange',
   },
   individualMenuText: {
